@@ -1,0 +1,96 @@
+body {
+  font-family: "brandon-grotesque", Helvetica, sans-serif;
+}
+
+.wrapper {
+  width: 1440px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.button {
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  padding: .6rem 3.5rem;
+  font-weight: 700;
+  color: #fffff3;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button_highlight {
+  background: #a593e0;
+}
+
+.button_secondary {
+  background: rgba(250, 250, 250, 0.35);
+}
+
+.button_small {
+  padding: .3rem 1.5rem;
+}
+
+#banner {
+  background-image: url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#banner header {
+  padding: 2rem 0;
+}
+
+#banner #logo {
+  color: #fffff3;
+  font-weight: 700;
+  font-size: 1.35rem;
+  float: left;
+  margin: 0;
+}
+
+#banner #logo span {
+  font-weight: 400;
+}
+
+#banner nav {
+  float: right;
+}
+
+#banner nav a {
+  color: #fffff3;
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 2rem;
+}
+
+#banner .content {
+  padding: 4rem 0 8rem 0;
+}
+
+#banner .content .title, #banner .content .sub_title {
+  color: #fffff3;
+  text-align: center;
+}
+
+#banner .content .title {
+  font-size: 3.5rem;
+  margin: 0;
+}
+
+#banner .content .sub_title {
+  font-weight: 400;
+  font-size: 1,35rem;
+  width: 500px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.75;
+}
+
+#banner .content .button_wrapper {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+#banner .content .button_wrapper .button {
+  margin: 0 .75rem;
+}
