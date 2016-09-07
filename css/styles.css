@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "brandon-grotesque", Helvetica, sans-serif;
 }
@@ -29,6 +33,16 @@ body {
 
 .button_small {
   padding: .3rem 1.5rem;
+}
+
+.cf:after,
+.cf:before {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
 }
 
 #banner {
@@ -93,4 +107,63 @@ body {
 
 #banner .content .button_wrapper .button {
   margin: 0 .75rem;
+}
+
+#services {
+  background: #e0e3da;
+  padding: 2rem 0 6.5rem 0;
+  position: relative;
+}
+
+#services .service {
+  background: #fffff3;
+  width: 31%;
+  float: left;
+  margin: -5rem 1% 0 1%;
+  padding: 3rem 2.5%;
+  text-align: center;
+  position: relative;
+  -webkit-box-shadow: 0px 0px 57px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 57px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 57px 0px rgba(0, 0, 0, 0.25);
+  border-radius: .35rem;
+}
+
+#services .service h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #566270;
+}
+
+#services .service p {
+  margin: 0 0 2rem 0;
+  color: #566270;
+}
+
+#services .service .button {
+  padding: .5rem 2rem;
+}
+
+#services .service:after {
+  content: " ";
+  position: absolute;
+  left: 50%;
+  bottom: -50px;
+  height: 50px;
+  border-left: 2px solid #a593e0;
+}
+
+#services .middle:after {
+  bottom: -105px;
+  height: 105px;
+}
+
+#services:before {
+  content: " ";
+  position: absolute;
+  left: 50%;
+  bottom: 54px;
+  border-top: 2px solid #a593e0;
+  width: 59.5%;
+  margin-left: -30.1%;
 }

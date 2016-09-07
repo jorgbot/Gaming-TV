@@ -7,6 +7,10 @@ $azulclaro: #566270;
 
 // - - - - - - - - - Global Styles - - - - - - - //
 
+* {
+	box-sizing: border-box;
+}
+
 body {
 	font-family: "brandon-grotesque", Helvetica, sans-serif;
 }
@@ -39,7 +43,18 @@ body {
 .button_small {
 	padding: .3rem 1.5rem;
 }
-// - - - - - - - - - Banner Styles - - - - - - - //
+
+.cf:after,
+.cf:before {
+	content: " ";
+	display: table;
+}
+
+.cf:after {
+	clear: both;
+}
+
+// - - - - - - - - - Portada Styles - - - - - - - //
 
 #banner {
 	background-image: url(../images/banner.jpg);
@@ -91,5 +106,61 @@ body {
 				margin: 0 .75rem;
 			}
 		}
+	}
+}
+
+// - - - - - - - - - Series Styles - - - - - - - //
+
+#services {
+	background: $gris;
+	padding: 2rem 0 6.5rem 0;
+	position: relative;
+	.service {
+		background: $blanco;
+		width: 31%;
+		float: left;
+		margin: -5rem 1% 0 1%;
+		padding: 3rem 2.5%;
+		text-align: center;
+		position: relative;
+		-webkit-box-shadow: 0px 0px 57px 0px rgba(0, 0, 0, 0.25);
+		-moz-box-shadow: 0px 0px 57px 0px rgba(0, 0, 0, 0.25);
+  		box-shadow: 0px 0px 57px 0px rgba(0, 0, 0, 0.25);
+  		border-radius: .35rem;
+  		h3 {
+  			margin: 0;
+  			font-size: 1.5rem;
+  			color: $azulclaro;
+  		}
+  		p {
+  			margin: 0 0 2rem 0;
+  			color: $azulclaro;
+  		}
+  		.button {
+  			padding: .5rem 2rem;
+  		}
+  		&:after {
+  			content: " ";
+  			position: absolute;
+  			left: 50%;
+  			bottom: -50px;
+  			height: 50px;
+  			border-left: 2px solid #a593e0;
+  		}
+	}
+	.middle {
+		&:after {
+			bottom: -105px;
+			height: 105px;
+		}
+	}
+	&:before {
+		content: " ";
+		position: absolute;
+		left: 50%;
+		bottom: 54px;
+		border-top: 2px solid #a593e0;
+		width: 59.5%;
+		margin-left: -30.1%;
 	}
 }
