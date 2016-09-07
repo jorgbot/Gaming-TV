@@ -15,6 +15,7 @@ $azulgris: #9896aa;
 
 body {
 	font-family: "brandon-grotesque", Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
 }
 
 .wrapper {
@@ -67,6 +68,7 @@ body {
 	background-image: url(../images/banner.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	position: relative;
 	header {
 		padding: 2rem 0;
 	}
@@ -112,6 +114,12 @@ body {
 			.button {
 				margin: 0 .75rem;
 			}
+		}
+		.see_more {
+			position: absolute;
+			left: 50%;
+			margin-left: -15px;
+			bottom: 90px;
 		}
 	}
 }
