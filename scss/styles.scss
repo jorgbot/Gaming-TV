@@ -4,6 +4,8 @@ $blanco: #fffff3;
 $morado: #a593e0;
 $gris: #e0e3da;
 $azulclaro: #566270;
+$azuloscuro: #3f3d4f;
+$azulgris: #9896aa;
 
 // - - - - - - - - - Global Styles - - - - - - - //
 
@@ -42,6 +44,11 @@ body {
 
 .button_small {
 	padding: .3rem 1.5rem;
+}
+
+.button_large {
+	padding: 1rem 5rem;
+	font-size: 1.35rem;
 }
 
 .cf:after,
@@ -220,7 +227,7 @@ body {
 			z-index: 3;
 			border-radius: .35rem .35rem 0 0;
 			img {
-				width: 100%;
+				width: 112%;
 			}
 			&:nth-child(1) {
 				bottom: -37px;
@@ -244,6 +251,40 @@ body {
 				transform: scale(.8, .8);
 				z-index: 2;
 			}
+		}
+	}
+}
+
+// - - - - - - - - - Copy Final Styles - - - - - - - //
+
+#contact {
+	background: $gris;
+	padding: 6rem 0 8rem 0;
+	text-align: center;
+	.title {
+		font-size: 2.5rem;
+		color: $azulclaro;
+		margin: 0;
+	}
+	.sub_title {
+		font-size: 1.5rem;
+		color: $azuloscuro;
+		width: 600px;
+		max-width: 100%;
+		display: block;
+		margin: 0 auto 4rem auto;
+	}
+}
+
+footer {
+	padding:  1rem 0;
+	.copyright {
+		text-align: center;
+		font-weight: 700;
+		color: $azulgris;
+		a {
+			color: $morado;
+			text-decoration: none;
 		}
 	}
 }

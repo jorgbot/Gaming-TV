@@ -35,6 +35,11 @@ body {
   padding: .3rem 1.5rem;
 }
 
+.button_large {
+  padding: 1rem 5rem;
+  font-size: 1.35rem;
+}
+
 .cf:after,
 .cf:before {
   content: " ";
@@ -234,7 +239,7 @@ body {
 }
 
 #past_work #slider li img {
-  width: 100%;
+  width: 112%;
 }
 
 #past_work #slider li:nth-child(1) {
@@ -260,4 +265,40 @@ body {
   -moz-transform: scale(0.8, 0.8);
   transform: scale(0.8, 0.8);
   z-index: 2;
+}
+
+#contact {
+  background: #e0e3da;
+  padding: 6rem 0 8rem 0;
+  text-align: center;
+}
+
+#contact .title {
+  font-size: 2.5rem;
+  color: #566270;
+  margin: 0;
+}
+
+#contact .sub_title {
+  font-size: 1.5rem;
+  color: #3f3d4f;
+  width: 600px;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto 4rem auto;
+}
+
+footer {
+  padding: 1rem 0;
+}
+
+footer .copyright {
+  text-align: center;
+  font-weight: 700;
+  color: #9896aa;
+}
+
+footer .copyright a {
+  color: #a593e0;
+  text-decoration: none;
 }
